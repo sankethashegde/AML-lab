@@ -1,5 +1,15 @@
-# 4]  Program to double each item in a list using map()
+import numpy as np
+print("Different Arrays")
 
-numbers = [1, 2, 3, 4, 5]
-doubled = list(map(lambda x: x * 2, numbers))
-print(doubled)
+zeros = np.zeros(10)
+print("10 zeros:")
+print(zeros)
+ones = np.ones((3, 3))
+print("3 x 3 ones:")
+print(ones)
+identity = np.eye(4)
+print("4 x 4 identity matrix:")
+print(identity)
+numbers = np.arange(5, 51, 5)
+print("Numbers from 5 to 50:")
+print(numbers)

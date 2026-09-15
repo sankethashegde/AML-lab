@@ -1,5 +1,11 @@
-# 8]  Compute square of even numbers using  using list comprehension technique.
+import numpy as np
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-even_squares = [x ** 2 for x in numbers if x % 2 == 0]
-print(even_squares)
+salary = np.array([25000, 32000, 28000, 45000,
+                   50000, 38000, 42000, 30000])
+
+print("Total:", np.sum(salary))
+print("Average:", np.mean(salary))
+print("Highest:", np.max(salary))
+print("Lowest:", np.min(salary))
+print("Median:", np.median(salary))
+print("Std Dev:", np.std(salary))

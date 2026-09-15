@@ -1,17 +1,10 @@
-# 5]  Implementation of the quicksort algorithm in Python. [3,6,8,10,1,2,1]
+import numpy as np
+arr = np.arange(1, 25)
 
-def quicksort(arr):
-    if len(arr) <= 1:
-        return arr
+a = arr.reshape(4, 6)
+b = arr.reshape(6, 4)
+c = arr.reshape(2, 3, 4)
 
-    pivot = arr[len(arr) // 2]
-
-    left = [x for x in arr if x < pivot]
-    middle = [x for x in arr if x == pivot]
-    right = [x for x in arr if x > pivot]
-
-    return quicksort(left) + middle + quicksort(right)
-
-numbers = [3, 6, 8, 10, 1, 2, 1]
-print("Original List:", numbers)
-print("Sorted List:", quicksort(numbers))
+print(a.shape, a.ndim)
+print(b.shape, b.ndim)
+print(c.shape, c.ndim)

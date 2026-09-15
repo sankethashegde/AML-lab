@@ -1,6 +1,10 @@
-# 7] Compute square of numbers using list comprehension technique.
+import numpy as np
 
+a = np.array([10, 20, 30, 40, 50])
+b = np.array([5, 10, 15, 20, 25])
 
-numbers = [1, 2, 3, 4, 5]
-squares = [x ** 2 for x in numbers]
-print(squares)
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a ** 2)

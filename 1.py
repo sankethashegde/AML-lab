@@ -1,5 +1,4 @@
-# 1] Let's iterate from 0 to 200 and return the odd numbers
-
-for i in range(0, 201):
-    if i % 2 != 0:
-        print(i)
+import numpy as np
+print("\nConstant Array")
+constant_array = np.full((2, 2), 7.0)
+print(constant_array)

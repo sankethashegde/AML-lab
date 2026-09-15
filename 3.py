@@ -1,4 +1,9 @@
-# 3] Write your own program to show the use of lambda functions
+print(" Array 10 to 50 ")
 
-maximum = lambda a, b: a if a > b else b
-print("Larger number is:", maximum(15, 25))
+a = np.arange(10, 51)
+
+print("Array:", a)
+print("Number of elements:", a.size)
+print("Shape:", a.shape)
+print("Dimension:", a.ndim)
+print("Data type:", a.dtype)
